@@ -1,0 +1,319 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+
+section {
+  margin-bottom: 2px;
+}
+
+.cost-summary-page {
+  padding: 0px 96px;
+}
+.border {
+  border: 1px solid black;
+}
+
+.main-header {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  &__info-1 {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  &__info-2 {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  &__info-3 {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: end;
+  }
+  &__info-4 {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: end;
+  }
+}
+
+
+.page-header {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    &__info-1 {
+      font-size: 10px;
+      font-weight: bold;
+    }
+    &__info-2 {
+      font-size: 12px;
+      font-weight: bolder;
+    }
+    &__info-3 {
+      font-size: 10px;
+      font-weight: normal;
+      font-weight: 600;
+      text-align: end;
+    }
+  }
+
+.hero {
+  width: 100%;
+  height: 176px;
+  display: flex;
+  border-bottom: 1px solid black;
+  &__team-roles {
+    display: flex;
+    padding: 10px 16px 0px 34px;
+  }
+  &__team-titles {
+    text-align: end;
+  }
+  &__team-section {
+    width: 50%;
+  }
+  &__client-section {
+    width: 50%;
+    border-left: 1px solid black;
+  }
+  &__team-logo,
+  &__client-logo {
+    padding: 30px 34px;
+    display: flex;
+    justify-content: center;
+  }
+  &__client-days {
+    height: 76;
+    border-top: 1px solid black;
+  }
+}
+
+.project-info {
+  height: 26px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-left: 40px;
+  padding-top: 2px;
+
+  & > div {
+    width: 33%;
+  }
+  .ot {
+    border: 1px solid black;
+    padding: 0 8px;
+  }
+  .shooting-format {
+    border: 1px solid black;
+    padding: 0 24px 0 4px;
+  }
+  .delivery-format {
+    border: 1px solid black;
+    padding: 0 24px 0 4px;
+  }
+}
+.page {
+    width: 816px;
+    height: 1054px;
+    break-inside: avoid;
+    .section {
+    padding: 0px 96px;
+    }
+  }
+.section-table{
+    width: 100%;
+    border-top: 1px solid black;
+    // border-bottom: 1px solid black;
+    border-collapse: collapse;
+    &__wrapper {
+        width: 100%;
+        td {
+            font-size: 10px;
+        }
+    }
+    thead{
+        th{
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+            font-size: 10px;
+        }
+    }
+    &__header-1{
+        color: blue;
+        text-transform: capitalize;
+        width: 24px;
+    }
+    &__header-2{
+    }
+    &__header-3{
+        width: 34px;
+    }
+    &__header-4{
+        width: 34px;
+    }
+    &__header-5{
+        width: 34px;
+    }
+    &__header-6{
+        width: 34px;
+    }
+    &__header-7{
+        width: 34px;
+    }
+    &__header-8{
+        width: 68px;
+
+    }
+    &__row{
+        border-top: 1px solid black;
+    }
+    &__cell {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 10px;
+
+        &.index {
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 10px;
+        }
+
+    }
+    &__footer{
+        th {
+            font-size: 10px;
+        }
+        &-cell {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 10px;
+
+
+            &.empty{
+                border: none;
+            }
+        }
+        &-row{
+            
+        }
+    }
+}
+
+.cost-summary {
+  &__table {
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    &-text {
+      font-size: 10px;
+      font-weight: bold;
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        border-right: 1px solid black;
+      }
+      &:nth-of-type(2) {
+        width: 122px;
+      }
+    }
+    &-head {
+      border-bottom: 1px solid black;
+      background-color: rgba(0, 0, 0, 0.143);
+    }
+    .row {
+      border-bottom: 1px solid black;
+    }
+    .cell {
+      &.col-1 {
+        width: 16px;
+        font-size: 10px;
+        font-weight: bold;
+        color: red;
+        text-align: center;
+      }
+      &.col-2 {
+        width: 227px;
+        font-size: 10px;
+        font-weight: 500;
+      }
+      &.col-3 {
+        width: 86px;
+        font-size: 10px;
+        font-weight: 500;
+      }
+      &.col-4 {
+        width: 18px;
+        font-size: 10px;
+        font-weight: 500;
+        border-left: 1px solid black;
+        text-align: center;
+      }
+      &.col-5 {
+        font-size: 10px;
+        font-weight: 500;
+        border-left: 1px solid black;
+      }
+      &.col-6 {
+        width: 121px;
+        border-left: 1px solid black;
+      }
+    }
+    .totals {
+      // display: flex;
+    }
+    .contract-total {
+      width: 157px;
+      color: red;
+      font-weight: bold;
+      font-size: 10px;
+    }
+    .grand-total {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      font-size: 10px;
+    }
+    .row-total {
+      height: 22px;
+      font-size: 10px;
+    }
+    .total {
+      font-weight: bold;
+      border-right: 1px solid black;
+      font-size: 10px;
+    }
+  }
+}
+.notes {
+  border-top: 1px solid black;
+  font-size: 10px;
+  &-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 10px;
+    &__head {
+      background-color: rgba(0, 0, 0, 0.143);
+      border-bottom: 1px solid black;
+    }
+    &__cell-head {
+      font-size: 10px;
+    }
+    &__cell {
+      font-size: 10px;
+    }
+  }
+}
